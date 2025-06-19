@@ -10,11 +10,11 @@
 
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #0000;
   width: 100%;
   z-index: 3;
-  position: fixed;
-  border-bottom: 1px solid var(--color-neutral-300);
+  position: sticky;
+  /* border-bottom: 1px solid var(--color-neutral-300); */
 }
 
 header nav {
@@ -318,7 +318,7 @@ header nav .nav-tools-panel {
   z-index: 100;
   position: absolute;
   box-shadow: var(--shape-shadow-2);
-  background: var(--background-color);
+  background: #0000;
   top: var(--nav-height);
   right: 0;
   width: 100%;
@@ -336,7 +336,7 @@ header nav .nav-tools {
   height: 100%;
   gap: var(--spacing-small);
   align-items: center;
-  background: var(--background-color);
+  background: #0000;
   z-index: 3;
 }
 
@@ -350,12 +350,17 @@ header nav .nav-tools-wrapper > button {
   width: 40px;
 }
 
-header nav .nav-tools button.nav-cart-button {
+header.sticky nav .nav-tools button.nav-cart-button {
   background-image: url('../../icons/cart.svg');
+}
+header nav .nav-tools button.nav-cart-button {
+  background-image: url('../../icons/cart-white.svg');
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
+
+
 
 header nav .nav-tools button.nav-cart-button[data-count]::after {
   content: attr(data-count);
@@ -373,12 +378,16 @@ header nav .nav-tools button.nav-cart-button[data-count]::after {
   justify-content: center;
 }
 
+header.sticky nav .nav-tools button.nav-search-button {
+  background-image: url('../../icons/search.svg');
+}
 header nav .nav-tools button.nav-search-button {
   font-size: 0;
-  background-image: url('../../icons/search.svg');
+  background-image: url('../../icons/search-white.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 header .nav-search-panel {
   padding: var(--spacing-small);
@@ -588,7 +597,7 @@ li
   }
 
   header nav[aria-expanded='true'] .nav-tools {
-    background: var(--background-color);
+    background: #0000;
     bottom: 0;
     height: auto;
     left: 0;
@@ -666,7 +675,7 @@ li
   }
 
   header nav .nav-sections ul > li.nav-drop.active .submenu-wrapper {
-    background: var(--background-color);
+    background: #0000;
     display: block;
     height: 100%;
     left: 0;
@@ -682,7 +691,7 @@ li
   }
 
   header nav .nav-sections ul > li.nav-drop .submenu-header {
-    background: var(--background-color);
+    background: #0000;
     height: var(--spacing-large);
     left: 0;
     position: fixed;

@@ -1,1 +1,44 @@
 /* add global styles that can be loaded post LCP here */
+main{
+    position: relative;
+}
+.header-wrapper{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all .3s ease!important;
+    color: #fff;
+}
+
+.header-wrapper a{
+    color: #fff !important;
+}
+.header-wrapper.sticky,
+.header-wrapper.sticky a{
+    color: #000 !important;
+}
+
+.header-wrapper.sticky{
+    top: 0;
+    background-color: #fff;
+}
+.section.carousel-container.video-container.columns-container{
+    /* margin-top: 80px; */
+    .video-wrapper {
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 99999px;
+        z-index: -1;
+        width: 100%;
+    }
+    .video.block,.video.block video {
+        margin: 0;
+        max-width: 99999px;
+        width: 100%;
+    }
+}
+.carousel-container .carousel-wrapper{
+        padding: 130px 0;
+}
